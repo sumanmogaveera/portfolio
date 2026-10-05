@@ -72,7 +72,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </span>
               <span className="flex items-center gap-1">
                 <GithubIcon className="w-3 h-3 text-cyan-400" />
-                github.com/sumanmogaveera79
+                github.com/sumanmogaveera
               </span>
               <span className="flex items-center gap-1">
                 <LinkedinIcon className="w-3 h-3 text-cyan-400" />

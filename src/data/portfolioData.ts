@@ -10,7 +10,7 @@ export const personalInfo = {
 
 Whether it is building community web applications like the Lost & Found finder, engineering automated attendance systems with computer vision, or studying privacy preservation in sensitive data, I relish tackling real-world problems through clean code. I believe in consistent learning, methodical debugging, and writing code that is readable, scalable, and impactful.`,
   email: "sumanmogaveera79@gmail.com",
-  github: "https://github.com/sumanmogaveera79",
+  github: "https://github.com/sumanmogaveera",
   linkedin: "https://linkedin.com/in/suman-mogaveera",
   stats: [
     { label: "Engineering Progress", value: "3rd Year", detail: "2024 – 2028 CSE curriculum & practical labs" },
@@ -92,7 +92,7 @@ export const projects: Project[] = [
       "Secure claim management system enabling finders to verify claimant proof of ownership",
       "Status lifecycle tracking (Reported, Under Claim, Verified, Returned)"
     ],
-    githubUrl: "https://github.com/sumanmogaveera79/lost-and-found-item-finder",
+    githubUrl: "https://github.com/sumanmogaveera/lost-and-found-item-finder",
     liveUrl: "https://lost-and-found-demo.example.com",
     architectureNotes: "Relational database schema modeling users, item listings, categories, and claim verification logs with file upload handling and responsive client UI."
   },
@@ -112,7 +112,7 @@ export const projects: Project[] = [
       "Automated attendance logs exportable in CSV/JSON formats",
       "Lightweight responsive client interface for student self check-in"
     ],
-    githubUrl: "https://github.com/sumanmogaveera79/smart-hostel-attendance",
+    githubUrl: "https://github.com/sumanmogaveera/smart-hostel-attendance",
     liveUrl: "https://hostel-attendance-demo.example.com",
     architectureNotes: "Client-server architecture using Flask microframework, OpenCV Haar cascade/face encodings, and SQLite relational tables for students, logs, and warden sessions."
   },
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       "Information loss vs. privacy preservation trade-off metrics calculation",
       "Comprehensive evaluation on multi-attribute medical research records"
     ],
-    githubUrl: "https://github.com/sumanmogaveera79/medical-data-privacy-protection",
+    githubUrl: "https://github.com/sumanmogaveera/medical-data-privacy-protection",
     liveUrl: "https://medical-privacy-research.example.com",
     architectureNotes: "Built with Python data stack, implementing text entity recognition pipelines, noise addition mechanisms, and structured evaluation benchmarking."
   }
@@ -261,8 +261,8 @@ export const certifications: CertificationItem[] = [
 ];
 
 export const githubProfile = {
-  username: "sumanmogaveera79",
-  profileUrl: "https://github.com/sumanmogaveera79",
+  username: "sumanmogaveera",
+  profileUrl: "https://github.com/sumanmogaveera",
   publicRepos: 12,
   primaryLanguages: [
     { name: "Java", percentage: 38, color: "#EA580C" },
