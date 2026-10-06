@@ -1,6 +1,6 @@
 import React from 'react';
-import { X, Printer, MapPin, Mail } from 'lucide-react';
-import { personalInfo, educationInfo, projects } from '../data/portfolioData';
+import { X, Printer, MapPin, Mail, Phone } from 'lucide-react';
+import { personalInfo, educationInfo } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 interface ResumeModalProps {
@@ -28,7 +28,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Curriculum Vitae Preview
             </span>
             <span className="text-xs text-slate-400 hidden sm:inline">
-              &bull; ATS-Formatted Student Resume
+              &bull; Official Student Resume
             </span>
           </div>
 
@@ -53,118 +53,177 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Resume Content Sheet */}
         <div className="bg-slate-950 p-6 sm:p-8 rounded-xl border border-slate-800/80 font-sans space-y-6 text-slate-200 print:bg-white print:text-black">
           
-          {/* Header */}
+          {/* Resume Header */}
           <div className="text-center space-y-1.5 border-b border-slate-800 pb-4">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight uppercase">
               {personalInfo.name}
             </h1>
-            <p className="text-xs sm:text-sm font-medium text-cyan-400 font-mono">
-              3rd-Year Computer Science Engineering Student &bull; Aspiring Software Developer
+            <p className="text-xs sm:text-sm font-semibold text-cyan-400 font-mono">
+              Computer Science &amp; Engineering Student
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 pt-1">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-slate-400 pt-1">
               <span className="flex items-center gap-1">
                 <MapPin className="w-3 h-3 text-cyan-400" />
                 {personalInfo.location}
+              </span>
+              <span className="flex items-center gap-1">
+                <Phone className="w-3 h-3 text-cyan-400" />
+                +91 9019950693
               </span>
               <span className="flex items-center gap-1">
                 <Mail className="w-3 h-3 text-cyan-400" />
                 {personalInfo.email}
               </span>
               <span className="flex items-center gap-1">
-                <GithubIcon className="w-3 h-3 text-cyan-400" />
-                github.com/sumanmogaveera
+                <LinkedinIcon className="w-3 h-3 text-cyan-400" />
+                linkedin.com/in/suman-mogaveera-409b1432a
               </span>
               <span className="flex items-center gap-1">
-                <LinkedinIcon className="w-3 h-3 text-cyan-400" />
-                linkedin.com/in/suman-mogaveera
+                <GithubIcon className="w-3 h-3 text-cyan-400" />
+                github.com/sumanmogaveera
               </span>
             </div>
           </div>
 
-          {/* Education */}
-          <div className="space-y-2">
+          {/* Career Objective */}
+          <div className="space-y-1.5">
             <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
-              Education
+              CAREER OBJECTIVE
             </h2>
-            <div className="flex justify-between items-start text-xs sm:text-sm">
-              <div>
-                <strong className="text-white block font-semibold">{educationInfo.degree} - Computer Science &amp; Engineering</strong>
-                <span className="text-slate-400 text-xs">{educationInfo.institution} ({educationInfo.affiliation})</span>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              Motivated third-year Computer Science Engineering student with a strong foundation in Java, C, Python, SQL, Data Structures, DBMS, and Web Development. Interested in software development, cybersecurity, and building practical real-world applications. Seeking an opportunity to apply my technical skills, gain industry experience, and contribute to meaningful software projects.
+            </p>
+          </div>
+
+          {/* Education */}
+          <div className="space-y-3">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
+              EDUCATION
+            </h2>
+            
+            <div className="space-y-2 text-xs">
+              <div className="flex justify-between items-start">
+                <div>
+                  <strong className="text-white block font-semibold">Bachelor of Engineering – Computer Science and Engineering</strong>
+                  <span className="text-slate-400">{educationInfo.institution}</span>
+                </div>
+                <div className="text-right font-mono text-cyan-400">
+                  CGPA: 8.5 | 2024 – Present
+                </div>
               </div>
-              <div className="text-right text-xs font-mono text-slate-400">
-                <span className="block font-medium text-cyan-400">2024 – 2028</span>
-                <span>Karnataka, India</span>
+
+              <div className="flex justify-between items-start pt-1 border-t border-slate-900">
+                <div>
+                  <strong className="text-white block font-semibold">{educationInfo.puc.course}</strong>
+                  <span className="text-slate-400">{educationInfo.puc.college}</span>
+                </div>
+                <div className="text-right font-mono text-cyan-400">
+                  Percentage: {educationInfo.puc.score}
+                </div>
+              </div>
+
+              <div className="flex justify-between items-start pt-1 border-t border-slate-900">
+                <div>
+                  <strong className="text-white block font-semibold">{educationInfo.sslc.course}</strong>
+                  <span className="text-slate-400">{educationInfo.sslc.school}</span>
+                </div>
+                <div className="text-right font-mono text-cyan-400">
+                  Percentage: {educationInfo.sslc.score}
+                </div>
               </div>
             </div>
-            <p className="text-xs text-slate-400 pt-1">
-              <strong>Key Coursework:</strong> {educationInfo.coursework.join(', ')}.
-            </p>
           </div>
 
           {/* Technical Skills */}
           <div className="space-y-2">
             <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
-              Technical Competencies
+              TECHNICAL SKILLS
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
-              <div>
-                <strong className="text-white">Programming Languages:</strong> Java (OOP &amp; Collections), C, Python
-              </div>
-              <div>
-                <strong className="text-white">Web Development:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive UI
-              </div>
-              <div>
-                <strong className="text-white">Database Management:</strong> MySQL, SQLite, Normalization, Query Optimization
-              </div>
-              <div>
-                <strong className="text-white">CS Fundamentals:</strong> Data Structures, Algorithms, DBMS, Operating Systems
-              </div>
-              <div className="sm:col-span-2">
-                <strong className="text-white">Developer Tools:</strong> Git, GitHub, VS Code, Eclipse, Command Line
-              </div>
+              <div><strong className="text-white">Programming Languages:</strong> Java, C, Python</div>
+              <div><strong className="text-white">Web Technologies:</strong> HTML, CSS, JavaScript, PHP</div>
+              <div><strong className="text-white">Databases:</strong> MySQL, SQL</div>
+              <div><strong className="text-white">Core Computer Science:</strong> Data Structures &amp; Algorithms, DBMS, Operating Systems, OOP</div>
+              <div><strong className="text-white">Frameworks:</strong> Flask</div>
+              <div><strong className="text-white">Tools:</strong> VS Code, Eclipse, Git, GitHub</div>
             </div>
           </div>
 
           {/* Projects */}
           <div className="space-y-3">
             <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
-              Selected Technical Projects
+              PROJECTS
             </h2>
 
-            {projects.map((proj) => (
-              <div key={proj.id} className="space-y-1 text-xs">
-                <div className="flex justify-between items-baseline">
-                  <strong className="text-white font-semibold text-xs sm:text-sm">
-                    {proj.title}
-                  </strong>
-                  <span className="text-[11px] font-mono text-cyan-400">
-                    {proj.technologies.slice(0, 4).join(' &bull; ')}
-                  </span>
+            <div className="space-y-2 text-xs text-slate-300">
+              <div>
+                <div className="flex justify-between font-semibold text-white">
+                  <span>Lost &amp; Found Item Management System</span>
+                  <span className="text-[11px] font-mono text-emerald-400">Status: Completed</span>
                 </div>
-                <p className="text-slate-300 text-xs leading-relaxed">
-                  {proj.solution}
-                </p>
-                <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px]">
-                  {proj.keyFeatures.slice(0, 2).map((feat, i) => (
-                    <li key={i}>{feat}</li>
-                  ))}
+                <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px] pt-1">
+                  <li>Developed a web-based platform for reporting, searching, and recovering lost items.</li>
+                  <li>Implemented functionality for users to post lost and found item details.</li>
+                  <li>Designed a simple and user-friendly interface to help users find and recover belongings.</li>
+                  <li>Focused on making the process of connecting lost items with their owners easier and more efficient.</li>
                 </ul>
               </div>
-            ))}
+
+              <div>
+                <div className="flex justify-between font-semibold text-white pt-1">
+                  <span>Privacy-Preserving Framework for Sensitive Medical Data</span>
+                  <span className="text-[11px] font-mono text-cyan-400">Status: Currently Working</span>
+                </div>
+                <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px] pt-1">
+                  <li>Developing a privacy-preserving framework for detecting and protecting sensitive information in multimodal medical data.</li>
+                  <li>Exploring techniques for sensitive information detection, anonymization, and privacy protection.</li>
+                  <li>Working toward secure handling and processing of medical information while reducing privacy risks.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div className="flex justify-between font-semibold text-white pt-1">
+                  <span>Smart Hostel Attendance Management System</span>
+                  <span className="text-[11px] font-mono text-cyan-400">Status: Currently Working</span>
+                </div>
+                <ul className="list-disc list-inside space-y-0.5 text-slate-400 text-[11px] pt-1">
+                  <li>Developing a web-based hostel attendance management system using Python, Flask, and SQLite.</li>
+                  <li>Implementing student registration, login, attendance recording, and dashboard functionality.</li>
+                  <li>Working on QR-based attendance and face-recognition-based attendance.</li>
+                  <li>Implementing attendance percentage calculation and student attendance management.</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          {/* Experience / Learning Milestones */}
-          <div className="space-y-2">
-            <h2 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400 border-b border-slate-800 pb-1">
-              Academic &amp; Practical Training
-            </h2>
-            <div className="text-xs text-slate-300 space-y-1">
-              <p>
-                &bull; <strong>Departmental Coding &amp; Laboratory Practicals:</strong> Developed foundational implementations of core data structures (Trees, Queues, Stacks, Linked Lists) in C and Java.
-              </p>
-              <p>
-                &bull; <strong>Relational Database Laboratory:</strong> Formulated ER models and 3NF normalized tables with stored queries and constraints in MySQL.
-              </p>
+          {/* Technical Interests & Strengths Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1 border-t border-slate-800">
+            <div className="space-y-1.5">
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
+                TECHNICAL INTERESTS
+              </h3>
+              <ul className="grid grid-cols-1 gap-1 text-xs text-slate-300">
+                <li>&bull; Software Development</li>
+                <li>&bull; Data Structures &amp; Algorithms</li>
+                <li>&bull; Web Development</li>
+                <li>&bull; Artificial Intelligence</li>
+                <li>&bull; Cybersecurity &amp; Cryptography</li>
+                <li>&bull; Database Management</li>
+              </ul>
+            </div>
+
+            <div className="space-y-1.5">
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-cyan-400">
+                STRENGTHS
+              </h3>
+              <ul className="grid grid-cols-1 gap-1 text-xs text-slate-300">
+                <li>&bull; Problem Solving</li>
+                <li>&bull; Quick Learner</li>
+                <li>&bull; Teamwork</li>
+                <li>&bull; Adaptability</li>
+                <li>&bull; Willingness to Learn</li>
+                <li>&bull; Communication Skills</li>
+              </ul>
             </div>
           </div>
 

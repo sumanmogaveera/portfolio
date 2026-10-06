@@ -10,14 +10,32 @@ export const personalInfo = {
 
 Whether it is building community web applications like the Lost & Found finder, engineering automated attendance systems with computer vision, or studying privacy preservation in sensitive data, I relish tackling real-world problems through clean code. I believe in consistent learning, methodical debugging, and writing code that is readable, scalable, and impactful.`,
   email: "sumanmogaveera79@gmail.com",
+  phone: "+91 9019950693",
   github: "https://github.com/sumanmogaveera",
   linkedin: "https://linkedin.com/in/suman-mogaveera-409b1432a",
+  objective: "Motivated third-year Computer Science Engineering student with a strong foundation in Java, C, Python, SQL, Data Structures, DBMS, and Web Development. Interested in software development, cybersecurity, and building practical real-world applications. Seeking an opportunity to apply my technical skills, gain industry experience, and contribute to meaningful software projects.",
   stats: [
-    { label: "Engineering Progress", value: "2+ Years", detail: "CSE curriculum & practical labs" },
-    { label: "Core Technologies", value: "Multiple", detail: "Java, Python, C, SQL & Web Stack" },
-    { label: "Growth Mindset", value: "Always Learning", detail: "Continuous learning & skill expansion" }
+    { label: "Engineering Progress", value: "2+ Years", detail: "SMVITM CSE Curriculum & Labs" },
+    { label: "Academic Standout", value: "8.5 CGPA", detail: "Consistently Strong Academic Record" },
+    { label: "Growth Mindset", value: "Always Learning", detail: "Continuous Skill & System Expansion" }
   ],
-  heroBadges: ["Java", "Python", "C", "SQL", "JavaScript", "HTML", "CSS"]
+  strengths: [
+    "Problem Solving",
+    "Quick Learner",
+    "Teamwork",
+    "Adaptability",
+    "Willingness to Learn",
+    "Communication Skills"
+  ],
+  technicalInterests: [
+    "Software Development",
+    "Data Structures & Algorithms",
+    "Web Development",
+    "Artificial Intelligence",
+    "Cybersecurity & Cryptography",
+    "Database Management"
+  ],
+  heroBadges: ["Java", "Python", "C", "SQL", "JavaScript", "HTML", "CSS", "MySQL"]
 };
 
 export const skillCategories: SkillCategory[] = [
@@ -202,25 +220,36 @@ export const journeyTimeline: TimelineItem[] = [
 export const educationInfo = {
   degree: "Bachelor of Engineering (B.E.)",
   major: "Computer Science & Engineering",
-  year: "Currently in 3rd Year (2024 – 2028)",
+  year: "2024 – Present (3rd Year)",
   institution: "Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM)",
   affiliation: "Affiliated to Visvesvaraya Technological University (VTU)",
   location: "Karnataka, India",
+  cgpa: "8.5 CGPA",
+  puc: {
+    course: "Pre-University Course (PUC)",
+    college: "R. N. Shetty PU College, Kundapura",
+    score: "91.83%"
+  },
+  sslc: {
+    course: "SSLC",
+    school: "Shubhada English Medium School",
+    score: "81.07%"
+  },
   highlights: [
     "Core focus on Data Structures, Algorithms, DBMS, and Object-Oriented Programming",
     "Hands-on practical programming laboratory sessions in C, Java, and Database Systems",
-    "Active member of departmental student coding activities and technical development projects",
+    "Active participant in departmental coding activities and practical engineering builds",
     "Consistent academic coursework emphasizing software engineering fundamentals"
   ],
   coursework: [
-    "Data Structures & Applications",
+    "Data Structures & Algorithms",
     "Object Oriented Programming with Java",
     "Database Management Systems (DBMS)",
-    "Operating Systems Fundamentals",
-    "Computer Organization & Architecture",
+    "Operating Systems",
+    "Computer Organization",
     "Design & Analysis of Algorithms",
-    "Discrete Mathematics & Logic",
-    "Principles of Software Engineering"
+    "Web Technologies",
+    "Software Engineering"
   ]
 };
 
