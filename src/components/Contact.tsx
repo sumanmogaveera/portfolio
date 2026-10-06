@@ -70,10 +70,10 @@ export const Contact: React.FC = () => {
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Let's Build{' '}
-            <span className="gradient-text-cyan">Something Together</span>
+            <span className="gradient-text-cyan">Something Meaningful</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Have a project idea, internship opportunity, or collaboration in mind? I'd love to hear from you.
+            Have an idea, project, or opportunity? I'd love to hear from you.
           </p>
         </div>
 

@@ -19,21 +19,21 @@ export const About: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>GET TO KNOW ME</span>
+            <span>DEVELOPER PROFILE</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Engineering Foundations &amp;{' '}
-            <span className="gradient-text-cyan">Problem-Solving Drive</span>
+            <span className="gradient-text-cyan">Software Architecture Focus</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            A 3rd-year undergraduate committed to building practical software solutions, understanding core fundamentals, and turning theory into working systems.
+            A 3rd-year Computer Science Engineering student committed to core computer science principles, clean software design, and practical system implementations.
           </p>
         </div>
 
-        {/* 4 Realistic Key Statistics */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
+        {/* 3 Realistic Key Statistics */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
           {personalInfo.stats.map((stat, idx) => (
             <div 
               key={idx}

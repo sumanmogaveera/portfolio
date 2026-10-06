@@ -13,10 +13,9 @@ Whether it is building community web applications like the Lost & Found finder, 
   github: "https://github.com/sumanmogaveera",
   linkedin: "https://linkedin.com/in/suman-mogaveera",
   stats: [
-    { label: "Engineering Progress", value: "3rd Year", detail: "2024 – 2028 CSE curriculum & practical labs" },
-    { label: "Projects / Mini Projects", value: "10+", detail: "Academic, lab & self-directed builds" },
+    { label: "Engineering Progress", value: "2+ Years", detail: "CSE curriculum & practical labs" },
     { label: "Core Technologies", value: "Multiple", detail: "Java, Python, C, SQL & Web Stack" },
-    { label: "Growth Mindset", value: "Always", detail: "Continuous learning & skill expansion" }
+    { label: "Growth Mindset", value: "Always Learning", detail: "Continuous learning & skill expansion" }
   ],
   heroBadges: ["Java", "Python", "C", "SQL", "JavaScript", "HTML", "CSS"]
 };
@@ -92,8 +91,8 @@ export const projects: Project[] = [
       "Secure claim management system enabling finders to verify claimant proof of ownership",
       "Status lifecycle tracking (Reported, Under Claim, Verified, Returned)"
     ],
-    githubUrl: "https://github.com/sumanmogaveera/lost-and-found-item-finder",
-    liveUrl: "https://lost-and-found-demo.example.com",
+    githubUrl: "https://github.com/sumanmogaveera/lost-item-found",
+    liveUrl: "https://magical-kangaroo-6f1b38.netlify.app/",
     architectureNotes: "Relational database schema modeling users, item listings, categories, and claim verification logs with file upload handling and responsive client UI."
   },
   {
@@ -272,7 +271,7 @@ export const githubProfile = {
   ],
   pinnedRepos: [
     {
-      name: "lost-and-found-item-finder",
+      name: "lost-item-found",
       description: "Web platform connecting people who lost items with finders, featuring photo listings, search, and claim workflows.",
       language: "JavaScript / Python",
       stars: "★ 4",

@@ -118,13 +118,15 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               <GithubIcon className="w-4 h-4" />
               <span>GitHub Repo</span>
             </a>
-            <button
-              onClick={() => alert(`This is a realistic project demo link for ${project.title}. In production, this can point to your live deployed server or student lab preview!`)}
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-md shadow-cyan-500/20"
             >
               <ExternalLink className="w-4 h-4" />
-              <span>Live Prototype Preview</span>
-            </button>
+              <span>Live Demo</span>
+            </a>
           </div>
         </div>
 
