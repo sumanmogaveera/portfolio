@@ -11,7 +11,7 @@ export const personalInfo = {
 Whether it is building community web applications like the Lost & Found finder, engineering automated attendance systems with computer vision, or studying privacy preservation in sensitive data, I relish tackling real-world problems through clean code. I believe in consistent learning, methodical debugging, and writing code that is readable, scalable, and impactful.`,
   email: "sumanmogaveera79@gmail.com",
   github: "https://github.com/sumanmogaveera",
-  linkedin: "https://linkedin.com/in/suman-mogaveera",
+  linkedin: "https://linkedin.com/in/suman-mogaveera-409b1432a",
   stats: [
     { label: "Engineering Progress", value: "2+ Years", detail: "CSE curriculum & practical labs" },
     { label: "Core Technologies", value: "Multiple", detail: "Java, Python, C, SQL & Web Stack" },
@@ -92,7 +92,7 @@ export const projects: Project[] = [
       "Status lifecycle tracking (Reported, Under Claim, Verified, Returned)"
     ],
     githubUrl: "https://github.com/sumanmogaveera/lost-item-found",
-    liveUrl: "https://magical-kangaroo-6f1b38.netlify.app/",
+    liveUrl: "https://lost-item-found-899x.vercel.app/",
     architectureNotes: "Relational database schema modeling users, item listings, categories, and claim verification logs with file upload handling and responsive client UI."
   },
   {
